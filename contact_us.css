@@ -1,0 +1,195 @@
+/* General css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+  /* Colors */
+  --primary-color: #000;
+  --secondary-color: #fff;
+  /* --third-color: #0d5c58; */
+  --third-color: #4479e1;
+
+  /* Border radius */
+  --border-radius-s: 8px;
+  --border-radius-m: 30px;
+  --border-radius-circle: 50%;
+
+  /* Font size */
+  --font-size-s: 0.9rem;
+  --font-size-n: 1rem;
+  --font-size-m: 1.12rem;
+  --font-size-l: 1.5rem;
+  --font-size-xl: 2rem;
+  --font-size-xxl: 2.3rem;
+
+
+  /* Site max width */
+  --site-max-width: 1300px;
+}
+
+body {
+  background-image: linear-gradient(to right, #0d5c5899, #00000000), url(/shanghai-sunset.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+button {
+  background-color: var(--third-color);
+  color: var(--secondary-color);
+  border: none;
+  cursor: pointer;
+  border-radius: var(--border-radius-s);
+}
+
+a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-weight: var(--font-size-l);
+  font-size: var(--font-size-n);
+}
+
+/* Nav styling */
+header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  background: var(--primary-color);
+  background: rgba(0, 0, 0, 0.7);
+  color: var(--secondary-color);
+}
+
+
+nav {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav h2 {
+  font-style: italic;
+  font-size: var(--font-size-l);
+}
+
+nav .navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  flex: 1;
+}
+
+
+nav button {
+  padding: 7px 15px;
+  width: 65px;
+}
+
+/* About styling */
+.contact-section .section-content {
+  color: var(--secondary-color);
+  padding-top: 10rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -7rem;
+  flex: 1;
+}
+
+.vertical-line {
+  width: 2px;
+  height: 200px;
+  margin-top: 4rem;
+  margin-bottom: 80px;
+  background-color: var(--secondary-color);
+}
+
+.social-link-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  /* Space between icons */
+}
+
+.social-link {
+  font-size: 24px;
+}
+
+.contact-details {
+  margin-top: -7rem;
+  flex: 8;
+}
+
+.contact-details h2,
+p {
+  min-width: 80%;
+}
+
+.contact-details h2 {
+  text-transform: uppercase;
+  font-size: 70px;
+  padding-bottom: 40px;
+}
+
+.contact-details .about-text {
+  font-size: 15px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  max-width: 1000px;
+}
+
+.contact-details {
+  display: flex;
+  align-items: center;
+  gap: 20%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 500px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: var(--border-radius-s);
+}
+
+.contact-form input, textarea {
+  height: 35px;
+  background-color: transparent;
+  color: var(--secondary-color);
+  padding-left: 30px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  border-radius: var(--border-radius-s);
+}
+
+.contact-form input::placeholder, textarea::placeholder {
+  color: var(--secondary-color);
+  size: 10px;
+  opacity: 0.6;
+}
+
+.contact-form textarea {
+  height: 120px;
+  padding-top: 10px;
+}
+
+.contact-form button {
+  height: 40px;
+}
