@@ -33,7 +33,7 @@
 }
 
 body {
-  background-image: linear-gradient(to right, #0d5c5899, #00000000), url(/shanghai-sunset.jpg);
+  background-image: linear-gradient(to right, #0d5c5899, #00000000), url(./shanghai-sunset.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
